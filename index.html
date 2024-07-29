@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>傳藝體驗風格測試</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>傳藝體驗風格測試</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. 你更喜歡戶外活動還是室內活動？</p>
+                <label>
+                    <input type="radio" name="q1" value="outdoor"> 戶外活動
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="indoor"> 室內活動
+                </label>
+            </div>
+            <div class="question">
+                <p>2. 你喜歡動手製作還是觀賞展覽？</p>
+                <label>
+                    <input type="radio" name="q2" value="hands-on"> 動手製作
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="exhibition"> 觀賞展覽
+                </label>
+            </div>
+            <div class="question">
+                <p>3. 你是喜歡獨自活動還是與家人朋友一起？</p>
+                <label>
+                    <input type="radio" name="q3" value="solo"> 獨自活動
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="group"> 家人朋友
+                </label>
+            </div>
+            <div class="question">
+                <p>4. 你是否有身障身份？</p>
+                <label>
+                    <input type="radio" name="q4" value="yes"> 是
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="no"> 否
+                </label>
+            </div>
+            <div class="question">
+                <p>5. 你是否年長者？</p>
+                <label>
+                    <input type="radio" name="q5" value="yes"> 是
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="no"> 否
+                </label>
+            </div>
+            <button type="button" onclick="submitQuiz()">提交測驗</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
