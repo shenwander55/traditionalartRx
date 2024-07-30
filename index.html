@@ -3,62 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>傳藝體驗風格測試</title>
+    <title>心理測驗</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>傳藝體驗風格測試</h1>
         <form id="quizForm">
+            <!-- 問題和選項代碼 -->
             <div class="question">
-                <p>1. 你更喜歡戶外活動還是室內活動？</p>
-                <label>
-                    <input type="radio" name="q1" value="outdoor"> 戶外活動
-                </label>
-                <label>
-                    <input type="radio" name="q1" value="indoor"> 室內活動
-                </label>
+                <p>你具有敬老身分(65歲以上)嗎？</p>
+                <label><input type="radio" name="senior" value="yes"> 是</label>
+                <label><input type="radio" name="senior" value="no"> 否</label>
             </div>
             <div class="question">
-                <p>2. 你喜歡動手製作還是觀賞展覽？</p>
-                <label>
-                    <input type="radio" name="q2" value="hands-on"> 動手製作
-                </label>
-                <label>
-                    <input type="radio" name="q2" value="exhibition"> 觀賞展覽
-                </label>
+                <p>你更喜歡動手製作還是觀賞展覽？</p>
+                <label><input type="radio" name="preference" value="crafting"> 動手製作</label>
+                <label><input type="radio" name="preference" value="exhibiting"> 觀賞展覽</label>
             </div>
-            <div class="question">
-                <p>3. 你是喜歡自然風景還是與傳統技藝？</p>
-                <label>
-                    <input type="radio" name="q3" value="solo"> 自然風景
-                </label>
-                <label>
-                    <input type="radio" name="q3" value="group"> 傳統技藝
-                </label>
-            </div>
-            <div class="question">
-                <p>4. 你是否有身障身份？</p>
-                <label>
-                    <input type="radio" name="q4" value="yes"> 是
-                </label>
-                <label>
-                    <input type="radio" name="q4" value="no"> 否
-                </label>
-            </div>
-            <div class="question">
-                <p>5. 你是否具有敬老身分(65歲以上)？</p>
-                <label>
-                    <input type="radio" name="q5" value="yes"> 是
-                </label>
-                <label>
-                    <input type="radio" name="q5" value="no"> 否
-                </label>
-            </div>
-             <img src="傳藝處方箋-O_MAP.jpg" alt="傳藝處方箋" width="200" height="150">
-            <button type="button" onclick="submitQuiz()">提交測驗</button>
+            <!-- 在這裡插入圖片 -->
+            <img src="傳藝處方箋-O_MAP.jpg" alt="傳藝處方箋" width="100%">
+            
+            <!-- 提交按鈕 -->
+            <button type="submit">回答測驗</button>
         </form>
-        <div id="result" class="result"></div>
     </div>
     <script src="script.js"></script>
 </body>
