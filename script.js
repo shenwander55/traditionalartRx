@@ -23,8 +23,6 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
 
     if (q5 === 'yes') {
         suggestion = '建議兌換2張入園門票';
-    } else if (q4 === 'yes') {
-        suggestion = '建議兌換1張入園門票+1張手作券';
     } else {
         if (q2 === 'crafting') {
             suggestion = '建議兌換1張入園門票+1張手作券';
@@ -33,5 +31,6 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
         }
     }
 
-    alert(`專屬於您的傳藝處方箋: ${suggestion}`);
+    // 顯示建議結果
+    document.getElementById('suggestion').innerText = `專屬於您的傳藝處方箋: ${suggestion}`;
 });
